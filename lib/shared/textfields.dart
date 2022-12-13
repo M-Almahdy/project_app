@@ -6,10 +6,10 @@ class MyTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      keyboardType: TextInputType.emailAddress,
-      obscureText: false,
+      keyboardType: texttype,
+      obscureText: ispass,
       decoration: InputDecoration(
-        hintText: "Please, Enter your Email: ",
+        hintText: hinttext,
         enabledBorder: OutlineInputBorder(
           borderSide: Divider.createBorderSide(context),
         ),
