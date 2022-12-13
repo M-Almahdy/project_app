@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/shared/color.dart';
 import 'package:test_app/shared/textfields.dart';
 
 class Login extends StatelessWidget {
@@ -27,6 +28,21 @@ class Login extends StatelessWidget {
             ispass: true,
             hinttext: "Please, Enter Your Password : ",
           ),
+          const SizedBox(
+            height: 33,
+          ),
+          ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                "Sign in",
+                style: TextStyle(fontSize: 19),
+              ),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(BTNgreen),
+                padding: MaterialStateProperty.all(EdgeInsets.all(12)),
+                shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8))),
+              ))
         ],
       ),
     ));
