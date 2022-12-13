@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 
 class MyTextField extends StatelessWidget {
-  const MyTextField({super.key});
+  final bool ispass;
+  final String hinttext;
+  final TextInputType texttype;
+
+  MyTextField({
+    super.key,
+    required this.texttype,
+    required this.ispass,
+    required this.hinttext,
+  });
 
   @override
   Widget build(BuildContext context) {
