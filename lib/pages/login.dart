@@ -6,8 +6,31 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-      children: [Text("data")],
+        body: Center(
+      child: Column(
+        children: [
+          const SizedBox(
+            height: 64,
+          ),
+          TextField(
+            keyboardType: TextInputType.text,
+            obscureText: true,
+            decoration: InputDecoration(
+              hintText: "Please, Enter your password: ",
+              enabledBorder: OutlineInputBorder(
+                borderSide: Divider.createBorderSide(context),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(
+                  color: Colors.grey,
+                ),
+              ),
+              filled: true,
+              contentPadding: const EdgeInsets.all(8),
+            ),
+          )
+        ],
+      ),
     ));
   }
 }
