@@ -28,6 +28,11 @@ class Home extends StatelessWidget {
                         TextStyle(color: Color.fromARGB(255, 255, 255, 255))),
                 accountEmail: Text("yiticam620@pro5g.com"),
               ),
+               ListTile(
+                title: Text("Home"),
+                leading: Icon(Icons.home),
+                onTap: () {}
+              ),
             ],
           )),
           appBar: AppBar(
