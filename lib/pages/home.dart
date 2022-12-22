@@ -12,26 +12,27 @@ class Home extends StatelessWidget {
       child: Scaffold(
           body: GridView.builder(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              childAspectRatio: 3/2,
-              crossAxisSpacing: 10,
-              mainAxisSpacing: 33),
+                crossAxisCount: 2,
+                childAspectRatio: 3 / 2,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 33),
             itemCount: 4,
             itemBuilder: (BuildContext context, int index) {
-            return GridTile(
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(55),
-                child: Image.asset("assets/img/1.jpeg")),
-            );
-          },),
-
-
-
-
-
-
-
-
+              return GridTile(
+                child: Stack(
+                  children: [
+                    Positioned(
+                      right: 0,
+                      left: 0,
+                      child: ClipRRect(
+                          borderRadius: BorderRadius.circular(55),
+                          child: Image.asset("assets/img/1.jpeg")),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
           drawer: Drawer(
               child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
