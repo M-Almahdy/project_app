@@ -13,8 +13,8 @@ class Home extends StatelessWidget {
       actions: [
         Row(
           children: [
-            Text("\$ 13"),
-            Text("\$ 13"),
+            Text("\$ 13" , style: TextStyle(fontSize: 18),),
+            ,
           ],
         )
       ],
