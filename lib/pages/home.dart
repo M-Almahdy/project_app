@@ -10,7 +10,13 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          drawer: Drawer(),
+          drawer: Drawer(
+              child: Column(
+            children: [
+              UserAccountsDrawerHeader(
+                  accountName: "Mohamed Wael", accountEmail: accountEmail)
+            ],
+          )),
           appBar: AppBar(
             actions: [
               Row(
