@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:test_app/shared/color.dart';
@@ -14,7 +14,15 @@ class Home extends StatelessWidget {
               child: Column(
             children: [
               UserAccountsDrawerHeader(
-                  accountName: "Mohamed Wael", accountEmail: accountEmail)
+                currentAccountPicture: CircleAvatar(
+                  radius: 55,
+                  backgroundImage: AssetImage("assets/img/ali.jpg"),
+                ),
+                accountName: Text("Mohamed Wael",
+                    style:
+                        TextStyle(color: Color.fromARGB(255, 255, 255, 255))),
+                accountEmail: Text("yiticam620@pro5g.com"),
+              ),
             ],
           )),
           appBar: AppBar(
