@@ -16,7 +16,7 @@ class Home extends StatelessWidget {
               UserAccountsDrawerHeader(
                 currentAccountPicture: CircleAvatar(
                   radius: 55,
-                  backgroundImage: AssetImage("assets/img/test.jpg"),
+                  backgroundImage: AssetImage("assets/img/mohamed.jpg"),
                 ),
                 accountName: Text("Mohamed Wael",
                     style:
