@@ -5,12 +5,7 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:test_app/shared/color.dart';
 
-class Item {
-  String imgPath;
-  double price;
 
-  Item({required this.imgPath, required this.price});
-}
 
 List items = [
   Item(imgPath: "assets/img/1.jpeg", price: 119.99),
