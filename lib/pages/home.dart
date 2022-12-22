@@ -49,7 +49,11 @@ class Home extends StatelessWidget {
                       onTap: () {}),
                 ],
               ),
-              Text("data")
+              Container(
+                margin: EdgeInsets.only(bottom: 12),
+                child: Text("Developed by Mohamed Alsaqr © 2023",
+                    style: TextStyle(fontSize: 16)),
+              )
             ],
           )),
           appBar: AppBar(
