@@ -43,6 +43,15 @@ class Home extends StatelessWidget {
                 return GestureDetector(
                   onTap: () {},
                   child: GridTile(
+                    footer: GridTileBar(
+                      backgroundColor: Color.fromARGB(66, 0, 0, 0),
+                      trailing: IconButton(
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          onPressed: () {},
+                          icon: Icon(Icons.add)),
+                      leading: Text("\$12.99"),
+                      title: Text(""),
+                    ),
                     child: Stack(
                       children: [
                         Positioned(
@@ -55,15 +64,6 @@ class Home extends StatelessWidget {
                               child: Image.asset(items[index].imgPath)),
                         ),
                       ],
-                    ),
-                    footer: GridTileBar(
-                      backgroundColor: Color.fromARGB(66, 0, 0, 0),
-                      trailing: IconButton(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          onPressed: () {},
-                          icon: Icon(Icons.add)),
-                      leading: Text("\$12.99"),
-                      title: Text(""),
                     ),
                   ),
                 );
