@@ -13,8 +13,11 @@ class Home extends StatelessWidget {
       actions: [
         Row(
           children: [
-            IconButton(onPressed: (), icon: Icon(Icons.add_shopping_cart)),
-            Text("\$ 13" , style: TextStyle(fontSize: 18),),
+            IconButton(onPressed: () {}, icon: Icon(Icons.add_shopping_cart)),
+            Text(
+              "\$ 13",
+              style: TextStyle(fontSize: 18),
+            ),
           ],
         )
       ],
