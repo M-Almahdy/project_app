@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:test_app/shared/color.dart';
 
@@ -35,6 +37,15 @@ class Home extends StatelessWidget {
                               child: Image.asset("assets/img/1.jpeg")),
                         ),
                       ],
+                    ),
+                    footer: GridTileBar(
+                      backgroundColor: Color.fromARGB(66, 73, 127, 110),
+                      trailing: IconButton(
+                          color: Color.fromARGB(255, 62, 94, 70),
+                          onPressed: () {},
+                          icon: Icon(Icons.add)),
+                      leading: Text("\$12.99"),
+                      title: Text(""),
                     ),
                   ),
                 );
