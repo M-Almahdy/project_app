@@ -74,6 +74,9 @@ class Details extends StatelessWidget {
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
+                SizedBox(
+                  width: 13,
+                ),
                 Row(
                   children: [
                     Icon(
@@ -104,7 +107,7 @@ class Details extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  width: 77,
+                  width: 66,
                 ),
                 Row(
                   children: [
