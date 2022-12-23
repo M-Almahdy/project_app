@@ -25,7 +25,9 @@ class Home extends StatelessWidget {
               itemCount: items.length,
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: ((context) => Details(todo: todos[index]))))
+                  },
                   child: GridTile(
                     footer: GridTileBar(
                       backgroundColor: Color.fromARGB(66, 0, 0, 0),
