@@ -153,7 +153,7 @@ class _DetailsState extends State<Details> {
               style: TextStyle(
                 fontSize: 18,
               ),
-              maxLines: isShowMore? 3 : null,
+              maxLines: isShowMore ? 3 : null,
               overflow: TextOverflow.fade,
             ),
             TextButton(
