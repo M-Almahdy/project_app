@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:test_app/provider/cart.dart';
@@ -26,7 +28,7 @@ class Checkout extends StatelessWidget {
                   child: ListTile(
                     subtitle: Text(""),
                     leading: CircleAvatar(
-                      backgroundColor: AssetImage("assets/img/2.jpeg"),
+                      backgroundImage: AssetImage("assets/img/2.jpeg"),
                     ),
                     title: Text(""),
                     trailing:
