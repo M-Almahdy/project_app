@@ -62,7 +62,7 @@ class Details extends StatelessWidget {
               children: [
                 Container(
                   padding: EdgeInsets.all(4),
-                  child: Text("New"),
+                  child: Text("New", style: TextStyle(fontSize: 12),),
                   decoration: BoxDecoration(
                     color: Color.fromARGB(255, 255, 129, 129),
                     borderRadius: BorderRadius.circular(4),
