@@ -26,7 +26,7 @@ class Home extends StatelessWidget {
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: ((context) => Details(todo: todos[index]))))
+                    Navigator.push(context, MaterialPageRoute(builder: ((context) => Details(product: ,))))
                   },
                   child: GridTile(
                     footer: GridTileBar(
