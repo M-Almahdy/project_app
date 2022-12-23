@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/shared/color.dart';
 
 class Details extends StatelessWidget {
   const Details({super.key});
@@ -44,7 +45,7 @@ class Details extends StatelessWidget {
             ],
             backgroundColor: appbarGreen,
             title: Text("Home"),
-          )),
+          ),
     
       body: Text("data"));
   }
