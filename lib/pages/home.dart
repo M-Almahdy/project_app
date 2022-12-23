@@ -116,7 +116,7 @@ class Home extends StatelessWidget {
             ],
           )),
           appBar: AppBar(actions: [
-            pap()
+            pap(),
           ], backgroundColor: appbarGreen, title: Text("Home"))),
     );
   }
