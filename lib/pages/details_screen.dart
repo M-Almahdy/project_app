@@ -1,14 +1,18 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors
 
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:test_app/model/items.dart';
 import 'package:test_app/shared/color.dart';
 
 bool isShowMore = true;
 
 class Details extends StatefulWidget {
-  const Details({super.key});
+  // const Details({super.key});
+
+  Item product;
+  Details({required this.product});
 
   @override
   State<Details> createState() => _DetailsState();
