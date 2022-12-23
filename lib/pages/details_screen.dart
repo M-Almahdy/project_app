@@ -157,7 +157,9 @@ class _DetailsState extends State<Details> {
               overflow: TextOverflow.fade,
             ),
             TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {});
+                },
                 child: Text(
                   "Show more",
                   style: TextStyle(
