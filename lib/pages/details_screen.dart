@@ -65,7 +65,7 @@ class _DetailsState extends State<Details> {
             Image.asset(widget.product.imgPath),
             SizedBox(height: 11),
             Text(
-              "\$ 12.99",
+              "\$ ${widget.product.price}",
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(
