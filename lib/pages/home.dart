@@ -30,7 +30,7 @@ class Home extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                             builder: ((context) => Details(
-                                  product: items[0],
+                                  product: items[index],
                                 ))));
                   },
                   child: GridTile(
