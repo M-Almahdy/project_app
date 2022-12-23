@@ -30,27 +30,33 @@ class Checkout extends StatelessWidget {
                       return Card(
                         child: ListTile(
                           title: Text(cart.selectedProducts[index].name),
-                          subtitle: Text("${cart.selectedProducts[index].price} - ${cart.selectedProducts[index].location}"),
+                          subtitle: Text(
+                              "${cart.selectedProducts[index].price} - ${cart.selectedProducts[index].location}"),
                           leading: CircleAvatar(
-                            backgroundImage:
-                                AssetImage(cart.selectedProducts[index].imgPath),
+                            backgroundImage: AssetImage(
+                                cart.selectedProducts[index].imgPath),
                           ),
                           trailing: IconButton(
                               onPressed: () {
-                                cart.delete(product)
-                              }, icon: Icon(Icons.remove)),
+                                cart.delete(cart.selectedProducts[index]);
+                              },
+                              icon: Icon(Icons.remove)),
                         ),
                       );
                     })),
           ),
-        ElevatedButton(onPressed: () {},
-         child: Text("Pay \$${cart.price}", style: TextStyle(fontSize: 19),),
-         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(BTNpink),
-          padding: MaterialStateProperty.all(EdgeInsets.all(12)),
-          shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)))
-         ),
-         ),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text(
+              "Pay \$${cart.price}",
+              style: TextStyle(fontSize: 19),
+            ),
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(BTNpink),
+                padding: MaterialStateProperty.all(EdgeInsets.all(12)),
+                shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8)))),
+          ),
         ],
       ),
     );
