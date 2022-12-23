@@ -6,10 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:test_app/model/items.dart';
 import 'package:test_app/shared/color.dart';
 
-
-
-
-
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
