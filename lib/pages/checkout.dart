@@ -27,7 +27,7 @@ class Checkout extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   return Card(
                     child: ListTile(
-                      title: Text(""),
+                      title: Text(cart.selectedProducts[index].name),
                       subtitle: Text(""),
                       leading: CircleAvatar(
                         backgroundImage:
