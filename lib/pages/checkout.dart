@@ -19,7 +19,7 @@ class Checkout extends StatelessWidget {
       body: SizedBox(
         height: 300,
         child: ListView.builder(
-          
+          padding: const EdgeInsets.all(8),
           
           itemBuilder: itemBuilder),
       ),
