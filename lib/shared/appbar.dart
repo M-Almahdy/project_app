@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:test_app/provider/cart.dart';
@@ -16,8 +18,10 @@ class pap extends StatelessWidget {
                       Positioned(
                         bottom: 24,
                         child: Container(
+                            // ignore: sort_child_properties_last
                             child: Text(
                               "${cart.selectedProducts.length}",
+                              // ignore: prefer_const_constructors
                               style: TextStyle(
                                   fontSize: 16,
                                   color: Color.fromARGB(255, 0, 0, 0)),
