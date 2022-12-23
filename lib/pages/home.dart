@@ -38,10 +38,15 @@ class Home extends StatelessWidget {
                   child: GridTile(
                     footer: GridTileBar(
                       backgroundColor: Color.fromARGB(66, 0, 0, 0),
-                      trailing: IconButton(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          onPressed: () {},
-                          icon: Icon(Icons.add)),
+                      trailing:
+                          Consumer<Cart>(builder: ((context, cart, child) {
+                        return IconButton(
+                            color: Color.fromARGB(255, 62, 94, 70),
+                            onPressed: () {
+                              cart.add(items[index]);
+                            },
+                            icon: Icon(Icons.add));
+                      })),
                       leading: Text("\$12.99"),
                       title: Text(""),
                     ),
