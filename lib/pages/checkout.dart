@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:test_app/provider/cart.dart';
 import 'package:test_app/shared/appbar.dart';
 import 'package:test_app/shared/color.dart';
 
@@ -8,6 +9,7 @@ class Checkout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final cart = Provider.of<Cart>(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: appbarGreen,
