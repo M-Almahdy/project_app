@@ -139,6 +139,7 @@ class Details extends StatelessWidget {
                 SizedBox(
                   height: 16,
                 ),
+                Text("Most computer keyboards look the same — three rows of letters, a row or two of numbers, and a lot of punctuation and function keys. But although they look similar, keyboards can vary wildly when it comes to how they work on the inside. Most people today use one of two kinds of keyboards: membrane and mechanical keyboards. Membrane keyboards, the more common type, feature some sort of rubber dome under each key. When you press a key, the rubber is compressed, and the key makes an electrical connection with the keyboard's wires. Mechanical keyboards are very different — instead of rubber, they have a plastic switch under the key that makes the connection go through. This might not sound that different, but the style of key has a huge impact on how you type.")
               ],
             )
           ],
