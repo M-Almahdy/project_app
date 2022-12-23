@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:test_app/model/items.dart';
+import 'package:test_app/pages/checkout.dart';
 import 'package:test_app/pages/details_screen.dart';
 import 'package:test_app/provider/cart.dart';
 import 'package:test_app/shared/appbar.dart';
@@ -102,7 +103,14 @@ class Home extends StatelessWidget {
                   ListTile(
                       title: Text("My products"),
                       leading: Icon(Icons.add_shopping_cart),
-                      onTap: () {}),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Checkout(),
+                          ),
+                        );
+                      }),
                   ListTile(
                       title: Text("About"),
                       leading: Icon(Icons.help_center),
