@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -42,7 +42,7 @@ class Checkout extends StatelessWidget {
                     })),
           ),
         ElevatedButton(onPressed: () {},
-         child: Text("", style: TextStyle(fontSize: 19),),
+         child: Text("Pay ${cart.price}", style: TextStyle(fontSize: 19),),
          style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(Colors.orange),
           padding: MaterialStateProperty.all(EdgeInsets.all(12)),
