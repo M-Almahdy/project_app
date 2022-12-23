@@ -149,7 +149,9 @@ class Details extends StatelessWidget {
               maxLines: 3,
               overflow: TextOverflow.fade,
             ),
-           TextButton(onPressed: (){}, child: Text("Show more"),),
+           TextButton(onPressed: (){}, child: Text("Show more", style: TextStyle(
+                fontSize: 18,
+              ),)),
           ],
         ),
       ),
