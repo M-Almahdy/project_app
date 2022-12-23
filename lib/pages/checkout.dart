@@ -28,6 +28,8 @@ class Checkout extends StatelessWidget {
                     leading: CircleAvatar(
                       backgroundColor: AssetImage("assets/img/2.jpeg"),
                     ),
+                    title: Text(""),
+
                   ),
                 );
               })),
