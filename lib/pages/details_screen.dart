@@ -102,7 +102,11 @@ class Details extends StatelessWidget {
                     ),
                   ],
                 ),
-               
+               Row(
+                children: [
+                  Icon(Icons.edit_location, size: 23, color: Color.fromARGB(168, 3, 65, 27),),
+                ],
+               )
                ],
             )
           ],
