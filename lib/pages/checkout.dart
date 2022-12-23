@@ -29,7 +29,8 @@ class Checkout extends StatelessWidget {
                       backgroundColor: AssetImage("assets/img/2.jpeg"),
                     ),
                     title: Text(""),
-
+                    trailing:
+                        IconButton(onPressed: () {}, icon: (Icons.remove)),
                   ),
                 );
               })),
