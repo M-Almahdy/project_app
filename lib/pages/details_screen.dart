@@ -4,6 +4,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:test_app/model/items.dart';
+import 'package:test_app/shared/appbar.dart';
 import 'package:test_app/shared/color.dart';
 
 bool isShowMore = true;
@@ -24,7 +25,7 @@ class _DetailsState extends State<Details> {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          
+          pap(),
         ],
         backgroundColor: appbarGreen,
         title: Text("Details_screen"),
