@@ -28,7 +28,7 @@ class Checkout extends StatelessWidget {
                   return Card(
                     child: ListTile(
                       title: Text(cart.selectedProducts[index].name),
-                      subtitle: Text("${cart.selectedProducts[index].price}"),
+                      subtitle: Text("${cart.selectedProducts[index].price} - ${cart.selectedProducts[index].location}"),
                       leading: CircleAvatar(
                         backgroundImage:
                             AssetImage(cart.selectedProducts[index].imgPath),
