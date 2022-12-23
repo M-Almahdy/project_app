@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:test_app/pages/checkout.dart';
 import 'package:test_app/provider/cart.dart';
 
 
@@ -32,7 +33,12 @@ class pap extends StatelessWidget {
                                 shape: BoxShape.circle)),
                       ),
                       IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: ((context) => Checkout(                                ))));
+                          },
                           icon: Icon(Icons.add_shopping_cart)),
                     ],
                   ),
