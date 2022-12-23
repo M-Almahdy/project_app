@@ -107,7 +107,7 @@ class Details extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  width: 66,
+                  width: 55,
                 ),
                 Row(
                   children: [
@@ -128,9 +128,13 @@ class Details extends StatelessWidget {
                 SizedBox(
                   height: 16,
                 ),
-                Text(
-                  "Details : ",
-                  style: TextStyle(fontSize: 18),
+                SizedBox(
+                  width: double.infinity,
+                  child: Text(
+                    "Details : ",
+                    style: TextStyle(fontSize: 22),
+                    textAlign: TextAlign.start,
+                  ),
                 ),
                 SizedBox(
                   height: 16,
