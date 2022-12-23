@@ -20,7 +20,7 @@ class Checkout extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: SizedBox(
-            height: 300,
+            height: 550,
             child: ListView.builder(
                 padding: const EdgeInsets.all(8),
                 itemCount: cart.selectedProducts.length,
@@ -29,11 +29,12 @@ class Checkout extends StatelessWidget {
                     child: ListTile(
                       subtitle: Text(""),
                       leading: CircleAvatar(
-                        backgroundImage: AssetImage("assets/img/2.jpeg"),
+                        backgroundImage:
+                            AssetImage(cart.selectedProducts[index].imgPath),
                       ),
                       title: Text(""),
-                      trailing:
-                          IconButton(onPressed: () {}, icon: Icon(Icons.remove)),
+                      trailing: IconButton(
+                          onPressed: () {}, icon: Icon(Icons.remove)),
                     ),
                   );
                 })),
