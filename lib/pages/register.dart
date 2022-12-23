@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:test_app/shared/color.dart';
 import 'package:test_app/shared/textfields.dart';
@@ -7,7 +9,6 @@ class Register extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var textField = TextField();
     return SafeArea(
       child: Scaffold(
           body: Center(
@@ -44,15 +45,15 @@ class Register extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {},
-                child: Text(
-                  "Register",
-                  style: TextStyle(fontSize: 19),
-                ),
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(BTNgreen),
                   padding: MaterialStateProperty.all(EdgeInsets.all(12)),
                   shape: MaterialStateProperty.all(RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8))),
+                ),
+                child: Text(
+                  "Register",
+                  style: TextStyle(fontSize: 19),
                 ),
               ),
               const SizedBox(

@@ -1,6 +1,4 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors
-
-import 'dart:ui';
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors, must_be_immutable
 
 import 'package:flutter/material.dart';
 import 'package:test_app/model/items.dart';
@@ -47,13 +45,13 @@ class _DetailsState extends State<Details> {
               children: [
                 Container(
                   padding: EdgeInsets.all(4),
-                  child: Text(
-                    "New",
-                    style: TextStyle(fontSize: 15),
-                  ),
                   decoration: BoxDecoration(
                     color: Color.fromARGB(255, 255, 129, 129),
                     borderRadius: BorderRadius.circular(4),
+                  ),
+                  child: Text(
+                    "New",
+                    style: TextStyle(fontSize: 15),
                   ),
                 ),
                 SizedBox(

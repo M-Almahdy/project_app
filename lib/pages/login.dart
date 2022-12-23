@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, duplicate_ignore
+
 import 'package:flutter/material.dart';
 import 'package:test_app/pages/register.dart';
 import 'package:test_app/shared/color.dart';
@@ -8,7 +10,6 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var textField = TextField();
     return SafeArea(
       child: Scaffold(
           body: Center(
@@ -35,15 +36,16 @@ class Login extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text(
-                "Sign in",
-                style: TextStyle(fontSize: 19),
-              ),
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(BTNgreen),
                 padding: MaterialStateProperty.all(EdgeInsets.all(12)),
                 shape: MaterialStateProperty.all(RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8))),
+              ),
+              // ignore: prefer_const_constructors
+              child: Text(
+                "Sign in",
+                style: TextStyle(fontSize: 19),
               ),
             ),
             const SizedBox(
