@@ -16,7 +16,9 @@ class Checkout extends StatelessWidget {
           pap()
         ],
       ),
-      body: ,
+      body: SizedBox(
+        
+      ),
     );
   }
 }
