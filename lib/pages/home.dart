@@ -117,29 +117,32 @@ class Home extends StatelessWidget {
           appBar: AppBar(actions: [
             Row(
               children: [
-                Consumer<Cart>(builder: (context, cart, child) {
-                  return Stack(
-                  children: [
-                    Positioned(
-                      bottom: 24,
-                      child: Container(
-                        child: Text(
-                          "0",
-                          style: TextStyle(
-                              fontSize: 16,
-                              color: Color.fromARGB(255, 0, 0, 0)),
+                Consumer<Cart>(
+                  builder: (context, cart, child) {
+                    return Stack(
+                      children: [
+                        Positioned(
+                          bottom: 24,
+                          child: Container(
+                            child: Text(
+                              "${cart.selectedProducts.length}",
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color.fromARGB(255, 0, 0, 0)),
+                            ),
+                            padding: EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                                color: Color.fromARGB(211, 164, 255, 193),
+                                shape: BoxShape.circle),
+                          ),
                         ),
-                        padding: EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(211, 164, 255, 193),
-                            shape: BoxShape.circle),
-                      ),
-                    ),
-                    IconButton(
-                        onPressed: () {}, icon: Icon(Icons.add_shopping_cart)),
-                  ],
+                        IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.add_shopping_cart)),
+                      ],
+                    );
+                  },
                 ),
-                },),
                 Padding(
                   padding: const EdgeInsets.only(right: 12),
                   child: Text(
