@@ -60,14 +60,22 @@ class Details extends StatelessWidget {
             ),
             Row(
               children: [
+                Icon(
+                  Icons.star,
+                  size: 23,
+                  color: Color.fromARGB(255, 255, 191, 0),
+                ),
                 Container(
                   padding: EdgeInsets.all(4),
-                  child: Text("New", style: TextStyle(fontSize: 12),),
+                  child: Text(
+                    "New",
+                    style: TextStyle(fontSize: 12),
+                  ),
                   decoration: BoxDecoration(
                     color: Color.fromARGB(255, 255, 129, 129),
                     borderRadius: BorderRadius.circular(4),
                   ),
-                )
+                ),
               ],
             )
           ],
