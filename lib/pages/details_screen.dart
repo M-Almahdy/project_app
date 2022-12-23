@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:test_app/shared/color.dart';
 
@@ -45,6 +47,18 @@ class Details extends StatelessWidget {
           backgroundColor: appbarGreen,
           title: Text("Details_screen"),
         ),
-        body: Text("data"));
+        body: Column(
+          children: [
+            Image.asset("assets/img/1.jpeg"),
+            SizedBox(height: 12),
+            Text(
+              "\$ 12.99",
+              style: TextStyle(fontSize: 20),
+            ),
+            SizedBox(
+              height: 16,
+            ),
+          ],
+        ));
   }
 }
