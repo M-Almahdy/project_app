@@ -60,10 +60,34 @@ class Details extends StatelessWidget {
             ),
             Row(
               children: [
-                Icon(
-                  Icons.star,
-                  size: 23,
-                  color: Color.fromARGB(255, 255, 191, 0),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.star,
+                      size: 23,
+                      color: Color.fromARGB(255, 255, 191, 0),
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 23,
+                      color: Color.fromARGB(255, 255, 191, 0),
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 23,
+                      color: Color.fromARGB(255, 255, 191, 0),
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 23,
+                      color: Color.fromARGB(255, 255, 191, 0),
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 23,
+                      color: Color.fromARGB(255, 255, 191, 0),
+                    ),
+                  ],
                 ),
                 Container(
                   padding: EdgeInsets.all(4),
