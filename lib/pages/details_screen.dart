@@ -102,20 +102,25 @@ class Details extends StatelessWidget {
                     ),
                   ],
                 ),
+                SizedBox(
+                  width: 77,
+                ),
                 Row(
                   children: [
                     Icon(
                       Icons.edit_location,
-                      size: 23,
+                      size: 27,
                       color: Color.fromARGB(168, 3, 65, 27),
                     ),
                     SizedBox(
                       width: 3,
                     ),
-                    Text("Flower Shop",
-                    style: TextStyle(fontSize: 14),),
+                    Text(
+                      "Flower Shop",
+                      style: TextStyle(fontSize: 19),
+                    ),
                   ],
-                )
+                ),
               ],
             )
           ],
