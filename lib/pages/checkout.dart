@@ -46,7 +46,7 @@ class Checkout extends StatelessWidget {
          style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(Colors.orange),
           padding: MaterialStateProperty.all(EdgeInsets.all(12)),
-          
+          shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)))
          ),
          ),
         ],
