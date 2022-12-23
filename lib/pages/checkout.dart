@@ -44,7 +44,8 @@ class Checkout extends StatelessWidget {
         ElevatedButton(onPressed: () {},
          child: Text("", style: TextStyle(fontSize: 19),),
          style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(Colors.orange),\
+          backgroundColor: MaterialStateProperty.all(Colors.orange),
+          padding: MaterialStateProperty.all(EdgeInsets.all(12)),
           
          ),
          ),
