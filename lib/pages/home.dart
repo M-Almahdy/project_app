@@ -148,7 +148,7 @@ class Home extends StatelessWidget {
             backgroundColor: appbarGreen,
             title: Consumer<Cart>(
               builder: (((context, cart, child) {
-                return Text("${cart.myName}");
+                return Text("${cart}");
               })),
             ),
           )),
