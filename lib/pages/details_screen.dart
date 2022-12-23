@@ -58,6 +58,13 @@ class Details extends StatelessWidget {
             SizedBox(
               height: 16,
             ),
+            Row(
+              children: [
+                Container(
+                  child: Text("New"),
+                )
+              ],
+            )
           ],
         ));
   }
