@@ -147,6 +147,7 @@ class Details extends StatelessWidget {
                 fontSize: 18,
               ),
               maxLines: 3,
+              overflow: TextOverflow.fade,
             ),
           ],
         ),
