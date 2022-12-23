@@ -36,7 +36,9 @@ class Checkout extends StatelessWidget {
                                 AssetImage(cart.selectedProducts[index].imgPath),
                           ),
                           trailing: IconButton(
-                              onPressed: () {}, icon: Icon(Icons.remove)),
+                              onPressed: () {
+                                cart.delete(product)
+                              }, icon: Icon(Icons.remove)),
                         ),
                       );
                     })),
