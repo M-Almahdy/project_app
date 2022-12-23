@@ -14,19 +14,16 @@ class Checkout extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: appbarGreen,
         title: Text("Checkout"),
-        actions: [
-          pap()
-        ],
+        actions: [pap()],
       ),
       body: SizedBox(
-        height: 300,
-        child: ListView.builder(
-          padding: const EdgeInsets.all(8),
-          itemCount: cart.selectedProducts.length,
-          itemBuilder: (BuildContext context, int index) {
-            return Container();
-          })),
-      ),
+          height: 300,
+          child: ListView.builder(
+              padding: const EdgeInsets.all(8),
+              itemCount: cart.selectedProducts.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Container();
+              })),
     );
   }
 }
