@@ -32,7 +32,7 @@ class Checkout extends StatelessWidget {
                     ),
                     title: Text(""),
                     trailing:
-                        IconButton(onPressed: () {}, icon: (Icons.remove)),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.remove)),
                   ),
                 );
               })),
