@@ -6,6 +6,7 @@ import 'package:test_app/pages/home.dart';
 import 'package:test_app/pages/login.dart';
 import 'package:test_app/pages/register.dart';
 import 'package:provider/provider.dart';
+import 'package:test_app/provider/cart.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
         create: (context) {
-          return ClassName();
+          return Cart();
         },
         child:
             const MaterialApp(debugShowCheckedModeBanner: false, home: Home()));
