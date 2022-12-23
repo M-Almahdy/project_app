@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -64,27 +66,27 @@ class Details extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.star,
-                      size: 23,
+                      size: 26,
                       color: Color.fromARGB(255, 255, 191, 0),
                     ),
                     Icon(
                       Icons.star,
-                      size: 23,
+                      size: 26,
                       color: Color.fromARGB(255, 255, 191, 0),
                     ),
                     Icon(
                       Icons.star,
-                      size: 23,
+                      size: 26,
                       color: Color.fromARGB(255, 255, 191, 0),
                     ),
                     Icon(
                       Icons.star,
-                      size: 23,
+                      size: 26,
                       color: Color.fromARGB(255, 255, 191, 0),
                     ),
                     Icon(
                       Icons.star,
-                      size: 23,
+                      size: 26,
                       color: Color.fromARGB(255, 255, 191, 0),
                     ),
                   ],
@@ -93,13 +95,14 @@ class Details extends StatelessWidget {
                   padding: EdgeInsets.all(4),
                   child: Text(
                     "New",
-                    style: TextStyle(fontSize: 12),
+                    style: TextStyle(fontSize: 20),
                   ),
                   decoration: BoxDecoration(
                     color: Color.fromARGB(255, 255, 129, 129),
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
+              
               ],
             )
           ],
