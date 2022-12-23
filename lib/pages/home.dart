@@ -91,7 +91,14 @@ class Home extends StatelessWidget {
                   ListTile(
                       title: Text("Home"),
                       leading: Icon(Icons.home),
-                      onTap: () {}),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Home(),
+                          ),
+                        );
+                      }),
                   ListTile(
                       title: Text("My products"),
                       leading: Icon(Icons.add_shopping_cart),
