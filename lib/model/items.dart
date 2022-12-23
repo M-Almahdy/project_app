@@ -5,7 +5,7 @@ class Item {
   Item(
       {required this.imgPath,
       required this.price,
-      this.location = "any Electronic Store"});
+      this.location = "PCs Store"});
 }
 
 List items = [
