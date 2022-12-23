@@ -41,7 +41,9 @@ class Checkout extends StatelessWidget {
                       );
                     })),
           ),
-        ElevatedButton(onPressed: () {} , child: Text("")),
+        ElevatedButton(onPressed: () {},
+         child: Text("", style: TextStyle(fontSize: 19),),
+         ),
         ],
       ),
     );
