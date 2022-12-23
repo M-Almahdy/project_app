@@ -18,24 +18,26 @@ class Checkout extends StatelessWidget {
         title: Text("Checkout"),
         actions: [pap()],
       ),
-      body: SizedBox(
-          height: 300,
-          child: ListView.builder(
-              padding: const EdgeInsets.all(8),
-              itemCount: cart.selectedProducts.length,
-              itemBuilder: (BuildContext context, int index) {
-                return Card(
-                  child: ListTile(
-                    subtitle: Text(""),
-                    leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/img/2.jpeg"),
+      body: SingleChildScrollView(
+        child: SizedBox(
+            height: 300,
+            child: ListView.builder(
+                padding: const EdgeInsets.all(8),
+                itemCount: cart.selectedProducts.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return Card(
+                    child: ListTile(
+                      subtitle: Text(""),
+                      leading: CircleAvatar(
+                        backgroundImage: AssetImage("assets/img/2.jpeg"),
+                      ),
+                      title: Text(""),
+                      trailing:
+                          IconButton(onPressed: () {}, icon: Icon(Icons.remove)),
                     ),
-                    title: Text(""),
-                    trailing:
-                        IconButton(onPressed: () {}, icon: Icon(Icons.remove)),
-                  ),
-                );
-              })),
+                  );
+                })),
+      ),
     );
   }
 }
