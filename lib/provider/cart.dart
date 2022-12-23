@@ -10,8 +10,10 @@ class Cart with ChangeNotifier {
     notifyListeners();
   }
 
-  delete() {
+  delete(Item product) {
     selectedProducts.remove(product);
     price -= product.price.round();
+        notifyListeners();
+
   }
 }
