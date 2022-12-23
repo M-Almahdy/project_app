@@ -3,8 +3,10 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:test_app/model/items.dart';
 import 'package:test_app/pages/details_screen.dart';
+import 'package:test_app/provider/cart.dart';
 import 'package:test_app/shared/color.dart';
 
 class Home extends StatelessWidget {
@@ -144,7 +146,7 @@ class Home extends StatelessWidget {
               )
             ],
             backgroundColor: appbarGreen,
-            title: Text("Home"),
+            title: Consumer<Cart>(),
           )),
     );
   }
