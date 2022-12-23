@@ -5,6 +5,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:test_app/shared/color.dart';
 
+bool isShowMore = true;
+
 class Details extends StatelessWidget {
   const Details({super.key});
 
@@ -149,9 +151,14 @@ class Details extends StatelessWidget {
               maxLines: 3,
               overflow: TextOverflow.fade,
             ),
-           TextButton(onPressed: (){}, child: Text("Show more", style: TextStyle(
-                fontSize: 18,
-              ),)),
+            TextButton(
+                onPressed: () {},
+                child: Text(
+                  "Show more",
+                  style: TextStyle(
+                    fontSize: 18,
+                  ),
+                )),
           ],
         ),
       ),
