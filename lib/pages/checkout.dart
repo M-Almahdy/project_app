@@ -18,26 +18,31 @@ class Checkout extends StatelessWidget {
         title: Text("Checkout"),
         actions: [pap()],
       ),
-      body: SingleChildScrollView(
-        child: SizedBox(
-            height: 550,
-            child: ListView.builder(
-                padding: const EdgeInsets.all(8),
-                itemCount: cart.selectedProducts.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return Card(
-                    child: ListTile(
-                      title: Text(cart.selectedProducts[index].name),
-                      subtitle: Text("${cart.selectedProducts[index].price} - ${cart.selectedProducts[index].location}"),
-                      leading: CircleAvatar(
-                        backgroundImage:
-                            AssetImage(cart.selectedProducts[index].imgPath),
-                      ),
-                      trailing: IconButton(
-                          onPressed: () {}, icon: Icon(Icons.remove)),
-                    ),
-                  );
-                })),
+      body: Column(
+        children: [
+          SingleChildScrollView(
+            child: SizedBox(
+                height: 550,
+                child: ListView.builder(
+                    padding: const EdgeInsets.all(8),
+                    itemCount: cart.selectedProducts.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      return Card(
+                        child: ListTile(
+                          title: Text(cart.selectedProducts[index].name),
+                          subtitle: Text("${cart.selectedProducts[index].price} - ${cart.selectedProducts[index].location}"),
+                          leading: CircleAvatar(
+                            backgroundImage:
+                                AssetImage(cart.selectedProducts[index].imgPath),
+                          ),
+                          trailing: IconButton(
+                              onPressed: () {}, icon: Icon(Icons.remove)),
+                        ),
+                      );
+                    })),
+          ),
+        ElevatedButton(onPressed: () {} , child: Text("")),
+        ],
       ),
     );
   }
